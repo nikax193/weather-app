@@ -1,5 +1,6 @@
+
 function getWeather() {
-    const apiKey = '93734b02644ba32130592360497f769a';
+    const apiKey = '3fdb0f3e2554dbd971065be58dfcb4a3';
     const city = document.getElementById('city').value;
 
     if (!city) {
@@ -7,8 +8,6 @@ function getWeather() {
         return;
     }
 
-    // const currentWeatherUrl = `https://api.openweathermap.org/data/3.0/weather?q=${city}&appid=${apiKey}`;
-    // const forecastUrl = `https://api.openweathermap.org/data/3.0/forecast?q=${city}&appid=${apiKey}`;
     const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
     const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`;
 
